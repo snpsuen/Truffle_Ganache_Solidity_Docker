@@ -9,7 +9,16 @@ sudo docker build -t snpsuen/web3-truffle-ganache:v022 .
 sudo docker run --name web3con -p 8545:8545 -p 3000:3000 -d snpsuen/web3-truffle-ganache:v022
 ```
 
-### 2 Apply the following changes to the container and save it to the target docker image.
+### 2 Target docker image
+Apply changes to the staging container.
+
+1. Modify truffle-config.js to indicate that the local Ganache blockchain is running on 0.0.0.0:8545.
+```
+sed -i '/host:/ s/127.0.0.1/0.0.0.0/ ; /port:/ s/7545/8545/'/web3/marketplace/truffle-config.js
+```
+2. 
+
+
 
 
 
