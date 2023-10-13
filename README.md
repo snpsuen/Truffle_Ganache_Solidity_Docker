@@ -10,7 +10,7 @@ sudo docker run --name web3con -p 8545:8545 -p 3000:3000 -d snpsuen/web3-truffle
 ```
 
 ### 2 Target docker image
-Apply changes to the staging container.
+Enter the staging container and apply changes.
 ```
 sudo docker exec -it web3con bash
 ```
@@ -19,7 +19,7 @@ sudo docker exec -it web3con bash
 ```
 sed -i '/host:/ s/127.0.0.1/0.0.0.0/ ; /port:/ s/7545/8545/'/web3/marketplace/truffle-config.js
 ```
-2. Set NODE_OPTIONS=--openssl-legacy-provider to work around a digital envelope error when starting the React frontend app.
+2. Set NODE_OPTIONS=--openssl-legacy-provider to avoid a digital envelope error when starting the React frontend app with npm run start.
 ```
 export NODE_OPTIONS=--openssl-legacy-provider
 ```
