@@ -29,11 +29,11 @@ sudo docker commit <web3con id> snpsuen/web3-truffle-ganache:v022
 ```
 
 ### 3 Dapp project ready container
-There you have it, a well-stocked docker image that gives rise to a container where you are ready to develope Solity smart contracts on Ethereum blockchains for the featured Marketplace [tutorial](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app).
+There you have it, a well-stocked docker image that gives rise to a container where you are ready to develope Solity smart contracts on Ethereum blockchains based on the featured Marketplace [tutorial](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app).
 ```
 sudo docker run --name web3con -p 8545:8545 -p 3000:3000 -d snpsuen/web3-truffle-ganache:v022
 ```
-Now that the project environment has been fully set up, without further do you may parachute straight into the thick of Part One and populate the Marketplace contract and others ...
+Now that the project environment has been fully set up, without further do you may parachute straight into the thick of Part one, populate the Marketplace contract and others step by step ...
 ```
 sudo docker exec -it web3con bash
 
@@ -42,5 +42,6 @@ touch src/contracts/Marketplace.sol
 ...
 ```
 
-### Local Ganache blocktrain
+### 4 Local Ganache blocktrain
+Unlike 
 
