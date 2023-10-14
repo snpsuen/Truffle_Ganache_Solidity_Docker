@@ -33,7 +33,7 @@ There you have it, a well-stocked docker image that gives rise to a container wh
 ```
 sudo docker run --name web3con -p 8545:8545 -p 3000:3000 -d snpsuen/web3-truffle-ganache:v022
 ```
-Now that the project environment has been fully set up, without further do you may parachute straight into the thick of Part one, populate the Marketplace contract and others step by step ...
+Now that the project environment has been fully set up, without further do you may parachute straight into the thick of Tutorial Part one, populate the Marketplace contract and others step by step ...
 ```
 sudo docker exec -it web3con bash
 
@@ -45,7 +45,7 @@ touch src/contracts/Marketplace.sol
 ### 4 Local Ganache blockchain
 The local Ganache blockchain is invoked on CLI inside the container. It is listening on INADDR_ANY, 0.0.0.0:8545, to faciliate port forwarding from the host of the container. The RPC URL is HTTPS://<Host_of_container>:8545 and the chain ID remains 1337. Please use these settings to add the Ganache network to the Metamask wallet.
 
-In the meantime, the Ganache log is redirected continuously to a user-defined, external log file, /web3/ganache.log, where you can grab the blockchain account keys, transaction updates and others whenever necessary.
+In the meantime, the Ganache log is redirected continuously to a user-defined, external log file, /web3/ganache.log, where you can grab the blockchain account keys and transaction updates, etc whenever necessary.
 
 
 
