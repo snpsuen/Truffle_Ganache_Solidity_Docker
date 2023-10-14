@@ -44,6 +44,7 @@ touch src/contracts/Marketplace.sol
 
 ### 4 Local Ganache blockchain
 The local Ganache blockchain is invoked on CLI inside the container. It is listening on INADDR_ANY, 0.0.0.0:8545, to faciliate port forwarding from the host of the container. The RPC URL is HTTPS://<Host_of_container>:8545 and the chain ID remains 1337. PLease add this blockchain network as such to the Metamask wallet.
+
 In the meantime, the Ganache 
 
 
