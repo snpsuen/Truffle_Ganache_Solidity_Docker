@@ -29,7 +29,7 @@ sudo docker commit <web3con id> snpsuen/web3-truffle-ganache:v022
 ```
 
 ### 3 Dapp project ready container
-There you have it, a well-stocked docker image that gives rise to a container where you are ready to develope Solity smart contracts on Ethereum blockchains based on the featured Marketplace [tutorial](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app).
+There you have it, a well-stocked docker image that gives rise to a container where you are ready to develope Solity smart contracts on Ethereum blockchains by going through the featured Marketplace [tutorial](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app).
 ```
 sudo docker run --name web3con -p 8545:8545 -p 3000:3000 -d snpsuen/web3-truffle-ganache:v022
 ```
@@ -42,6 +42,8 @@ touch src/contracts/Marketplace.sol
 ...
 ```
 
-### 4 Local Ganache blocktrain
-Unlike 
+### 4 Local Ganache blockchain
+The local Ganache blockchain is invoked on CLI inside the container. It is listening on INADDR_ANY, 0.0.0.0:8545, to faciliate port forwarding from the host of the container. The RPC URL is HTTPS://<Host_of_container>:8545 and the chain ID remains 1337. PLease add this blockchain network as such to the Metamask wallet.
+
+
 
