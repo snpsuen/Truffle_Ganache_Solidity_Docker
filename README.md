@@ -29,11 +29,11 @@ docker commit <web3con id> snpsuen/web3-truffle-ganache:v022
 ```
 
 ### 3 Dapp project ready container
-There you have it, a customised docker image that gives rise to a container 
+There you have it, a well-stocked docker image that gives rise to a container ready for you to develope Solity smart contracts on Ethereum blockchains for the featured Marketplace [tutorial] (https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app).
 ```
 sudo docker run --name web3con -p 8545:8545 -p 3000:3000 -d snpsuen/web3-truffle-ganache:v022
 ```
-Now, without further ado, you may parachute straight into the midt 
+Now that the project has been fully set up, without further do you may parachute straight into the thick of Part One of the tutorial
 
 
 
