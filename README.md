@@ -33,7 +33,7 @@ There you have it, a well-stocked docker image that gives rise to a container wh
 ```
 sudo docker run --name web3con -p 8545:8545 -p 3000:3000 -d snpsuen/web3-truffle-ganache:v022
 ```
-Now that the project environment has been fully set up, without further do you may parachute straight into the thick of Tutorial Part one, populate the Marketplace contract and others step by step ...
+Now that the project environment has been fully set up, without further do you may parachute straight into the thick of [Part one](https://www.dappuniversity.com/articles/how-to-build-a-blockchain-app#part1), populate the Marketplace contract and others step by step ...
 ```
 sudo docker exec -it web3con bash
 
